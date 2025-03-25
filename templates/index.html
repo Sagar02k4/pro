@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Disease Diagnosis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Disease Diagnosis</h1>
+        <p>Enter your symptoms below, separated by commas (e.g., fever,cough,headache):</p>
+
+        <div class="input-area">
+            <input type="text" id="symptomInput" placeholder="Enter symptoms">
+            <button onclick="submitSymptoms()">Diagnose</button>
+        </div>
+
+        <div id="result">
+            </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
